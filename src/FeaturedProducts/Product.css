@@ -1,0 +1,66 @@
+/* featured-products.css */
+.featured-products {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-row {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling if there are too many items */
+    gap: 20px;
+    padding: 10px 0;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0; /* Prevents cards from shrinking */
+    width: 250px; /* You can adjust the width as needed */
+  }
+  
+  .product-image {
+    width: 20%;
+    height: 20%;
+    border-radius: 8px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .quick-view-btn {
+    background-color: #28a745;
+  }
+  
+  .quick-view-btn:hover {
+    background-color: #218838;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #ff5733;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #e94e00;
+  }
+  
+  .cart {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

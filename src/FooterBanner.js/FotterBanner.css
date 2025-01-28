@@ -1,0 +1,93 @@
+.footerbanner1 {
+  display: flex;
+  gap: 10px;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+#card1 {
+  margin-top: 40px;
+}
+
+.card {
+  width: 300px;
+  /* Sets a fixed width for each card */
+  flex-shrink: 0;
+  /* Prevents the card from shrinking */
+  border: 1px solid #ddd;
+  /* Optional: Adds a border for better visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: Adds a shadow effect */
+}
+
+#womenimg {
+  height: 270px;
+}
+
+#kidimg {
+  height: 270px;
+}
+
+#beautyimg {
+  height: 270px;
+  width: 270px;
+}
+
+.btn {
+  /* padding-top: 20px; */
+  margin-top: 20px;
+  background-color: chocolate;
+  color: chocolate;
+}
+
+.card-header {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-header:hover {
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  color: #f1f1f1;
+  transform: scale(1.02);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-header:active {
+  transform: scale(0.98);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.stylish-button {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.stylish-button:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.stylish-button:active {
+  transform: translateY(1px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}

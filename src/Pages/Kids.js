@@ -1,0 +1,73 @@
+import React from "react";
+import "./Kids.css"; // Optional: Add custom styles
+
+const Kids = () => {
+  const kidsProducts = [
+    {
+      id: 1,
+      name: "Cotton T-Shirt",
+      image: "https://via.placeholder.com/150",
+      price: "$15",
+    },
+    {
+      id: 2,
+      name: "Denim Overalls",
+      image: "https://via.placeholder.com/150",
+      price: "$25",
+    },
+    {
+      id: 3,
+      name: "Printed Shorts",
+      image: "https://via.placeholder.com/150",
+      price: "$12",
+    },
+    {
+      id: 4,
+      name: "Woolen Sweater",
+      image: "https://via.placeholder.com/150",
+      price: "$30",
+    },
+    {
+      id: 5,
+      name: "Sports Shoes",
+      image: "https://via.placeholder.com/150",
+      price: "$40",
+    },
+    {
+      id: 6,
+      name: "School Bag",
+      image: "https://via.placeholder.com/150",
+      price: "$20",
+    },
+  ];
+
+  return (
+    <div className="kids-container p-6">
+      <h1 className="text-3xl font-bold text-center mb-8">Kids' Collection</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {kidsProducts.map((product) => (
+          <div
+            key={product.id}
+            className="product-card p-4 border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+          >
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-40 object-cover rounded-md"
+            />
+            <h2 className="mt-4 text-lg font-semibold">{product.name}</h2>
+            <p className="text-gray-500">{product.price}</p>
+            <button
+              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+              onClick={() => alert(`Added ${product.name} to cart!`)}
+            >
+              Add to Cart
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Kids;

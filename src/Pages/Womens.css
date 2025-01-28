@@ -1,0 +1,13 @@
+.womens-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-card img {
+    border-radius: 10px;
+  }
+  
+  .product-card button {
+    width: 100%;
+  }
+  
